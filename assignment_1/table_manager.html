@@ -9,8 +9,7 @@
 
 <!-- Data -->
 <script>
-
-// Don't copy this to any other places in this file. You can just use the "organizations" variable to do your assignment. 
+// Don't copy this to any other places in this file. You can just use the "organizations" variable to do your assignment.
 var organizations = [
 	 {
         "Region": "East Asia & Pacific",
@@ -19,7 +18,7 @@ var organizations = [
         "Organization Name": "200 Square",
         "Organization Type": "For-profit",
         "Sectors": "Housing, construction & real estate",
-        "Description": "200 Square is an online real estate agent in New Zealand.",        
+        "Description": "200 Square is an online real estate agent in New Zealand.",
         "City": "Wellington",
         "State/Region": "Wellington",
         "Founding Year": 2010,
@@ -34,7 +33,7 @@ var organizations = [
         "Organization Name": "21c Consultancy",
         "Organization Type": "For-profit",
         "Sectors": "IT and geospatial",
-        "Description": "21c is ICT innovation consultancy which advises international actors, institutions and governments around the world on technological trends which can affect the way they deliver services.",        
+        "Description": "21c is ICT innovation consultancy which advises international actors, institutions and governments around the world on technological trends which can affect the way they deliver services.",
         "City": "London",
         "State/Region": "",
         "Founding Year": 2015,
@@ -49,7 +48,7 @@ var organizations = [
         "Organization Name": "2GIS",
         "Organization Type": "For-profit",
         "Sectors": "IT and geospatial",
-        "Description": "2GIS is a city information service combined with a map. ",        
+        "Description": "2GIS is a city information service combined with a map. ",
         "City": "Novosibirsk",
         "State/Region": "Novosibirsk Oblast",
         "Founding Year": 1999,
@@ -64,7 +63,7 @@ var organizations = [
         "Organization Name": "2nd City Zoning",
         "Organization Type": "Nonprofit",
         "Sectors": "Housing, construction & real estate",
-        "Description": "An Open City App, 2nd City Zoning is an interactive map that lets you find out how your building is zoned, learn where to locate your business and explore zoning patterns throughout the city.",        
+        "Description": "An Open City App, 2nd City Zoning is an interactive map that lets you find out how your building is zoned, learn where to locate your business and explore zoning patterns throughout the city.",
         "City": "Chicago",
         "State/Region": "Illinois",
         "Founding Year": 2013,
@@ -94,7 +93,7 @@ var organizations = [
         "Organization Name": "360 Yield Center",
         "Organization Type": "For-profit",
         "Sectors": "Agriculture",
-        "Description": "Taking a 360-degree view of key yield-limiting variables, 360 Yield Center develops strategies for better-performing crops and better on-farm profits.",        
+        "Description": "Taking a 360-degree view of key yield-limiting variables, 360 Yield Center develops strategies for better-performing crops and better on-farm profits.",
         "City": "Morton",
         "State/Region": "Illinois",
         "Founding Year": 2014,
@@ -124,7 +123,7 @@ var organizations = [
         "Organization Name": "3Tier (Europe) ",
         "Organization Type": "For-profit",
         "Sectors": "Energy and climate",
-        "Description": "3TIER is a global environmental and industrial measurement company providing weather-driven renewable energy risk assessment and forecasting for wind, solar, and hydro power projects.",        
+        "Description": "3TIER is a global environmental and industrial measurement company providing weather-driven renewable energy risk assessment and forecasting for wind, solar, and hydro power projects.",
         "City": "Helsinki",
         "State/Region": "Uusimaa",
         "Founding Year": 2012,
@@ -139,7 +138,7 @@ var organizations = [
         "Organization Name": "5PSolutions",
         "Organization Type": "For-profit",
         "Sectors": "IT and geospatial",
-        "Description": "5PSolutions are artisans of mobile platforms.",       
+        "Description": "5PSolutions are artisans of mobile platforms.",
         "City": "Fairfax",
         "State/Region": "Virginia",
         "Founding Year": 2007,
@@ -154,7 +153,7 @@ var organizations = [
         "Organization Name": "AAA National",
         "Organization Type": "Other",
         "Sectors": "Transportation and logistics",
-        "Description": "AAA provides services such as travel, automotive, insurance, financial, and discounts.",        
+        "Description": "AAA provides services such as travel, automotive, insurance, financial, and discounts.",
         "City": "Irving",
         "State/Region": "Texas",
         "Founding Year": 1902,
@@ -184,7 +183,7 @@ var organizations = [
         "Organization Name": "ABRELATAM",
         "Organization Type": "Nonprofit",
         "Sectors": "Governance",
-        "Description": "ABRELATAM is an conference that seeks to accelerate the process of opening information through Open Data transparency and promote the Latin America.",        
+        "Description": "ABRELATAM is an conference that seeks to accelerate the process of opening information through Open Data transparency and promote the Latin America.",
         "City": "Santiago",
         "State/Region": "",
         "Founding Year": 2015,
@@ -192,24 +191,214 @@ var organizations = [
         "Type of Data Used": "",
         "profileID": "1687"
     }
-	
+
 ];
 </script>
 
 </head>
 
 <body>
+<h1> Table of Organizations  </h1>
+<table id="myTable" border=1>
+	  <tr>
+	    <td>Organization Name</td>
+	    <td>Organization Type</td>
+	    <td>Region</td>
+	    <td>Founding Year</td>
+			<td>Type of Data Used</td>
+			<td>Country Income Level</td>
+	  </tr>
+</table>
+<br>
+
+<button onclick="myFunction()">Generate Table</button>
+
 <!-- Feel free to add empty tags. Data shouldn't be here. -->
 	<div id="org_table"></div>
 
 <script>
 // outputs the first item of the organizations array. Just for testing.
-// console.log(organizations[0]); 
-console.log("test");
-
+// console.log(organizations[0]);
+//console.log("test");
 // Your JavaScript code goes here
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow()
+		var row1 = table.insertRow()
+		var row2 = table.insertRow()
+		var row3 =table.insertRow()
+		var row4= table.insertRow()
+		var row5= table.insertRow()
+		var row6=table.insertRow()
+		var row7=table.insertRow()
+		var row8=table.insertRow()
+		var row9=table.insertRow()
+		var row10=table.insertRow()
+		var row11=table.insertRow()
+    var cell1 = row.insertCell()
+    var cell2 = row.insertCell()
+		var cell3 = row.insertCell()
+		var cell4 = row.insertCell()
+		var cell5 = row.insertCell()
+		var cell6 = row.insertCell()
+		var cell7 = row1.insertCell()
+		var cell8 = row1.insertCell()
+		var cell9 = row1.insertCell()
+		var cell10 = row1.insertCell()
+		var cell11 = row1.insertCell()
+		var cell12 = row1.insertCell()
+		var cell13 = row2.insertCell()
+		var cell14 = row2.insertCell()
+		var cell15 = row2.insertCell()
+		var cell16 = row2.insertCell()
+		var cell17 = row2.insertCell()
+		var cell18 = row2.insertCell()
+		var cell19 = row3.insertCell()
+		var cell20 = row3.insertCell()
+		var cell21 = row3.insertCell()
+		var cell22 = row3.insertCell()
+		var cell23 = row3.insertCell()
+		var cell24 = row3.insertCell()
+		var cell25 = row4.insertCell()
+		var cell26 = row4.insertCell()
+		var cell27 = row4.insertCell()
+		var cell28 = row4.insertCell()
+		var cell29 = row4.insertCell()
+		var cell30 = row4.insertCell()
+		var cell31 = row5.insertCell()
+		var cell32 = row5.insertCell()
+		var cell33 = row5.insertCell()
+		var cell34 = row5.insertCell()
+		var cell35 = row5.insertCell()
+		var cell36 = row5.insertCell()
+		var cell37 = row6.insertCell()
+		var cell38 = row6.insertCell()
+		var cell39 = row6.insertCell()
+		var cell40 = row6.insertCell()
+		var cell41 = row6.insertCell()
+		var cell42 = row6.insertCell()
+		var cell43 = row7.insertCell()
+		var cell44 = row7.insertCell()
+		var cell45 = row7.insertCell()
+		var cell46 = row7.insertCell()
+		var cell47 = row7.insertCell()
+		var cell48 = row7.insertCell()
+		var cell49 = row8.insertCell()
+		var cell50 = row8.insertCell()
+		var cell51 = row8.insertCell()
+		var cell52 = row8.insertCell()
+		var cell53 = row8.insertCell()
+		var cell54 = row8.insertCell()
+		var cell55 = row9.insertCell()
+		var cell56 = row9.insertCell()
+		var cell57 = row9.insertCell()
+		var cell58 = row9.insertCell()
+		var cell59 = row9.insertCell()
+		var cell60 = row9.insertCell()
+		var cell61 = row10.insertCell()
+		var cell62 = row10.insertCell()
+		var cell63 = row10.insertCell()
+		var cell64 = row10.insertCell()
+		var cell65 = row10.insertCell()
+		var cell66 = row10.insertCell()
+		var cell67 = row11.insertCell()
+		var cell68 = row11.insertCell()
+		var cell69 = row11.insertCell()
+		var cell70 = row11.insertCell()
+		var cell71 = row11.insertCell()
+		var cell72 = row11.insertCell()
 
 
+
+
+
+		cell1.innerHTML = "200 Square"
+    cell2.innerHTML = "For-profit"
+		cell3.innerHTML = "East Asia & Pacific"
+		cell4.innerHTML = "2010"
+		cell5.innerHTML = "Housing, Education"
+		cell6.innerHTML = "High income"
+
+		cell7.innerHTML = "21c Consultancy"
+		cell8.innerHTML = "For-profit"
+		cell9.innerHTML = "Europe & Central Asia"
+		cell10.innerHTML="2015"
+		cell11.innerHTML= "N/A"
+		cell12.innerHTML= "High income"
+
+		cell13.innerHTML = "2GIS"
+		cell14.innerHTML = "For-profit"
+		cell15.innerHTML = "Europe & Central Asia"
+		cell16.innerHTML = "1999"
+		cell17.innerHTML = "Transportation, Geospatial, Business"
+		cell18.innerHTML = "High income"
+
+
+		cell19.innerHTML = "2nd City Zoning"
+		cell20.innerHTML = "Nonprofit"
+		cell21.innerHTML = "North America"
+		cell22.innerHTML = "2013"
+		cell23.innerHTML = "Housing"
+		cell24.innerHTML = "High income"
+
+
+		cell25.innerHTML = "3 Round Stones Inc"
+		cell26.innerHTML = "For-profit"
+		cell27.innerHTML = "North America"
+		cell28.innerHTML = "2010"
+		cell29.innerHTML = "Weather, Science and research, Health/healthcare, Geospatial, Environment, Energy, Demographic and social, Business"
+		cell30.innerHTML = "High income"
+
+
+		cell31.innerHTML = "360 Yield Center"
+		cell32.innerHTML = "For-profit"
+		cell33.innerHTML = "North America"
+		cell34.innerHTML = "2014"
+		cell35.innerHTML = "Agriculture, Environment, Weather"
+		cell36.innerHTML = "High income"
+
+		cell37.innerHTML = "3Strikes - City Stories"
+		cell38.innerHTML = "For-profit"
+		cell39.innerHTML = "Europe & Central Asia"
+		cell40.innerHTML = "2015"
+		cell41.innerHTML = "Arts and culture"
+		cell42.innerHTML = "High income"
+
+		cell43.innerHTML = "3Tier (Europe)"
+		cell44.innerHTML = "For-profit"
+		cell45.innerHTML = "Europe & Central Asia"
+		cell46.innerHTML = "2012"
+		cell47.innerHTML = "Other, Environment"
+		cell48.innerHTML = "High income"
+
+		cell49.innerHTML = "5PSolutions"
+		cell50.innerHTML = "For-profit"
+		cell51.innerHTML = "North America"
+		cell52.innerHTML = "2007"
+		cell53.innerHTML = "Environment"
+		cell54.innerHTML = "High income"
+
+		cell55.innerHTML = "AAA National"
+		cell56.innerHTML = "Other"
+		cell57.innerHTML = "North America"
+		cell58.innerHTML = "1902"
+		cell59.innerHTML = "Transportation"
+		cell60.innerHTML = "High income"
+
+		cell61.innerHTML = "AAASHTO"
+		cell62.innerHTML = "Other"
+		cell63.innerHTML = "North America"
+		cell64.innerHTML = "1913"
+		cell65.innerHTML = "Transportation"
+		cell66.innerHTML = "High income"
+
+		cell67.innerHTML = "ABRELATAM"
+		cell68.innerHTML = "Nonprofit"
+		cell69.innerHTML = "Latin America & Caribbean"
+		cell70.innerHTML = "2015"
+		cell71.innerHTML = "N/A"
+		cell72.innerHTML = "High income"
+}
 </script>
 
 </body>
